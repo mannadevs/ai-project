@@ -1,0 +1,42 @@
+.btn,
+.cmn--btn {
+	padding: 15px 40px;
+	font-weight: 700;
+	outline: none !important;
+	box-shadow: none !important;
+	@extend %transition;
+	border-radius: 10px;
+	background: var(--gradient-one);
+	z-index: 1;
+	font-size: 17px;
+	color: hsl(var(--white));
+	border: none !important;
+
+	&:hover {
+		background: var(--gradient-one-reverse);
+		color: hsl(var(--white));
+	}
+
+	&.btn--lg {
+		padding: 13px 45px !important;
+
+		@include breakpoint(lg) {
+			font-size: 18px;
+		}
+	}
+
+	&.btn--md {
+		padding: 8px 25px !important;
+		font-size: 15px;
+	}
+
+	&.btn--sm {
+		padding: 5px 15px !important;
+		font-size: 14px;
+	}
+
+	&.btn--xs {
+		padding: 0px 10px !important;
+		font-size: 13px;
+	}
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Heebo:wght@500&family=Urbanist:wght@400;700&display=swap');
+
+:root {
+	// Fonts
+	--heading-font: 'Urbanist', sans-serif;
+	--body-font: 'DM Sans', sans-serif;
+	--other-font: 'Heebo', sans-serif;
+
+	// body bg color
+	--body-bg: 236 51% 16%;
+
+	//Colors
+	--heading: 0 0% 100%;
+	--body: 236 12% 73%;
+	--border: 236 28% 28%;
+
+
+
+
+	// Base Color Shade
+	--base-h: 313;
+	--base-s: 93%;
+	--base-l: 49%;
+	--base: var(--base-h) var(--base-s) var(--base-l);
+
+	--base-100: var(--base-h) var(--base-s) calc(var(--base-l) + 20%);
+	--base-200: var(--base-h) var(--base-s) calc(var(--base-l) + 15%);
+	--base-300: var(--base-h) var(--base-s) calc(var(--base-l) + 10%);
+	--base-400: var(--base-h) var(--base-s) calc(var(--base-l) + 5%);
+	--base-600: var(--base-h) var(--base-s) calc(var(--base-l) - 8%);
+	--base-700: var(--base-h) var(--base-s) calc(var(--base-l) - 10%);
+	--base-800: var(--base-h) var(--base-s) calc(var(--base-l) - 15%);
+	--base-900: var(--base-h) var(--base-s) calc(var(--base-l) - 20%);
+
+	// Accent Color Shade
+	--accent-h: 236;
+	--accent-s: 42%;
+	--accent-l: 22%;
+	--accent: var(--accent-h) var(--accent-s) var(--accent-l);
+
+	// Gradient color 
+	--gradient-one: linear-gradient(270.06deg, #FF18CC 0.07%, #7D06F3 84.93%);
+	--gradient-one-reverse: linear-gradient(270.06deg, #7D06F3 0.07%, #FF18CC 84.93%);
+
+	--gradient-two: linear-gradient(0deg, rgba(20, 22, 62, 0.5), rgba(20, 22, 62, 0.5)),
+		linear-gradient(0deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.13));
+
+
+
+	// Fixed Colors
+	--primary: 245 82% 67%;
+	--secondary: 210 7% 56%;
+	--success: 147 67% 47%;
+	--danger: 360 78% 62%;
+	--warning: 29 100% 63%;
+	--info: 187 100% 43%;
+	--dark: 206 70% 11%;
+	--white: 0 0% 100%;
+	--black: 0 0% 0%;
+}
