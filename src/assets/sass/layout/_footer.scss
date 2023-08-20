@@ -1,3 +1,133 @@
-.footer-section {
-    background-color: ;
+.footer-top {
+    padding-top: 120px;
+    padding-bottom: 95px;
+}
+.footer-about {
+    width: 420px;
+    p {
+        margin-bottom: 40px;
+    }
+}
+.footer-title {
+    margin-bottom: 20px;
+}
+.footer-logo {
+    margin-bottom: 30px;
+}
+.footer-links {
+    width: 130px;
+}
+.subscribe-form {
+    position: relative;
+    border-radius: 10px;
+    .plane-icon {
+        position: absolute;
+        right: 165px;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+    .form--control {
+        height: 70px;
+        background-color: #353862;
+        color: hsl(var(--white));
+        padding-inline: 25px;
+        padding-right: 200px;
+        &::placeholder {
+            color: #B2B3C2;
+        }
+    }
+    .cmn--btn {
+        border-radius: 10px;
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        bottom: 7px;
+        padding-inline: 26.5px;
+        &:hover {
+            background: var(--gradient-one);
+        }
+    }
+}    
+
+.footer-gallery {
+    width: 307px;
+    margin: -5px;
+    .gallery-single {
+        width: calc(100% / 2);
+        padding: 5px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            left: 5px;
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            background-color: hsl(var(--base));
+            opacity: 0;
+            transition: all ease .3s;
+        }
+        &:hover {
+            .instagram-icon {
+                opacity: 1;
+            }
+            &::before {
+                opacity: 1;
+            }
+        }
+        .instagram-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all ease .3s;
+            color: hsl(var(--white));
+            font-size: 25px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.footer-bottom {
+    border-top: 1px solid hsl(var(--border));
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.bottom-text {
+    a {
+        color: hsl(var(--white));
+        font-weight: 600;
+    }
+}
+.socal-media {
+    margin-inline: - 5px;
+    li {
+        padding: 5px;
+        a {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background-color: #353862;
+            color: hsl(var(--white));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            &:hover, &.active {
+                background-color: hsl(var(--base));
+            }
+        }
+    }
+}
+
+.privacy-list {
+    li {
+        span {
+            padding-inline: 7px;
+        }
+    }
 }

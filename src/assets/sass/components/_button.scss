@@ -11,7 +11,8 @@
 	font-size: 17px;
 	color: hsl(var(--white));
 	border: none !important;
-
+	// font-family: var(--heading-font);
+	
 	&:hover {
 		background: var(--gradient-one-reverse);
 		color: hsl(var(--white));
