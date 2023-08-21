@@ -5,10 +5,8 @@
 	width: 100%;
 	z-index: 111;
 	@extend %transition;
-	background-color: hsl(var(--gradient-two));
 	border-bottom: 1px solid hsl(var(--border));
-
-
+	background-color: hsl(var(--accent));
 	.container {
 		max-width: 1720px;
 

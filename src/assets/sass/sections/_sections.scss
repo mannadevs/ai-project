@@ -29,14 +29,51 @@
 }
 
 // Create Section Start 
+.create-section {
+    background-color: #0F142B;
+    overflow: hidden;
+}
+.create-shape {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+
+}
 .create-content-wrapper {
     max-width: 534px;
+    position: relative;
+    z-index: 1;
     .subscribe-form {
         .plane-icon {
             right: 175px;
         }
         .cmn--btn {
             padding-inline: 23px;
+        }
+    }
+}
+.create-thumb-wrapper {
+    margin: -7.5px;
+    transform: rotate(-30deg);
+    width: 725px;
+    display: flex;
+    flex-wrap: wrap;
+   .thumb-1 {
+    position: absolute;
+    right: 100px;
+    top: -80%;
+    bottom: 0;
+   }
+   .thumb-2 {
+    position: absolute;
+    right: -260px;
+    top: -40%;
+  }
+    .create-thumb {
+        padding: 7.5px;
+        width: calc(100% / 2);
+        img {
+            width: 345px;
         }
     }
 }

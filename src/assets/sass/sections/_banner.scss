@@ -1,0 +1,18 @@
+.banner-section {
+    padding-top: 150px;
+}
+.banner-content {
+    max-width: 660px;
+    margin-inline: auto;
+    margin-bottom: 50px    ;
+    &__title {
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
+    a.btn {
+        padding: 15.2px 24px;
+    }
+}
