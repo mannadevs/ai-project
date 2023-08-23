@@ -1,6 +1,19 @@
 .banner-section {
     padding-top: 150px;
+    background-color: hsl(var(--gradient-one-reverse));
+    .contaier, .head-thumb {
+        position: relative;
+        z-index: 2;
+    }
 }
+.particles-js-canvas-el {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .banner-content {
     max-width: 660px;
     margin-inline: auto;
@@ -15,4 +28,31 @@
     a.btn {
         padding: 15.2px 24px;
     }
+}
+.banner-shape1, 
+.banner-shape2,
+.banner-shape3,
+.banner-shape4 {
+    position: absolute;
+    z-index: 1;
+}
+.banner-shape1 {
+    left: 100px;
+    top: 150px;
+    transform: rotate(-15deg);
+}
+.banner-shape2 {
+    left: 345px;
+    bottom: 100px;
+    transform: rotate(-15deg);
+}
+.banner-shape3 {
+    right: 100px;
+    top: 150px;
+    transform: rotate(15deg);
+}
+.banner-shape4 {
+    right: 345px;
+    bottom: 100px;
+    transform: rotate(15deg);
 }
